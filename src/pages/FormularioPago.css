@@ -1,0 +1,72 @@
+.formulario-pago-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f0f0f0;
+  padding: 20px;
+}
+
+.form-instruction {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 25px;
+  line-height: 1.5;
+}
+
+.form-group {
+  margin-bottom: 25px;
+}
+
+.form-group label {
+  display: block;
+  font-size: 14px;
+  color: #333;
+  margin-bottom: 8px;
+  font-weight: 500;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 14px;
+  border: none;
+  border-bottom: 2px solid #e0e0e0;
+  font-size: 14px;
+  outline: none;
+  transition: border-color 0.3s;
+  background-color: transparent;
+}
+
+.form-group input:focus {
+  border-bottom-color: #FFD100;
+}
+
+.form-group input::placeholder {
+  color: #333;
+}
+
+.bottom-section {
+  position: absolute;
+  bottom: 80px;
+  left: 0;
+  right: 0;
+  padding: 20px;
+  background-color: #fff;
+}
+
+.btn-continuar {
+  width: 100%;
+  padding: 16px;
+  background-color: #FFD100;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #333;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn-continuar:hover {
+  background-color: #E6BC00;
+}

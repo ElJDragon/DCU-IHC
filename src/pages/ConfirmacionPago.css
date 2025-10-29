@@ -1,0 +1,120 @@
+.confirmacion-pago-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f0f0f0;
+  padding: 20px;
+}
+
+.valor-label {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.monto {
+  font-size: 48px;
+  font-weight: 700;
+  color: #333;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.info-box {
+  padding: 12px 16px;
+  border-radius: 8px;
+  font-size: 13px;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.info-box.editable {
+  background-color: #e3f2fd;
+  border: 1px solid #90caf9;
+  color: #1976d2;
+}
+
+.info-box.costo {
+  background-color: #e3f2fd;
+  border: 1px solid #90caf9;
+  color: #1976d2;
+}
+
+.cuenta-origen {
+  background-color: #fff;
+  border: 2px solid #e0e0e0;
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cuenta-label {
+  font-size: 12px;
+  color: #666;
+  margin-bottom: 5px;
+}
+
+.cuenta-info h3 {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 5px;
+  font-weight: 600;
+}
+
+.cuenta-numero {
+  font-size: 13px;
+  color: #666;
+}
+
+.cuenta-saldo {
+  text-align: right;
+}
+
+.saldo-label {
+  font-size: 12px;
+  color: #666;
+  margin-bottom: 5px;
+}
+
+.saldo-monto {
+  font-size: 18px;
+  color: #333;
+  font-weight: 700;
+}
+
+.para-label {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 8px;
+}
+
+.empresa-destino {
+  font-size: 15px;
+  color: #333;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.btn-realizar-pago {
+  width: 100%;
+  padding: 16px;
+  background-color: #FFD100;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #333;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn-realizar-pago:hover {
+  background-color: #E6BC00;
+}

@@ -1,0 +1,52 @@
+.empresas-agua-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f0f0f0;
+  padding: 20px;
+}
+
+.page-header {
+  padding: 15px 20px;
+  border-bottom: 1px solid #e0e0e0;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.header-title {
+  font-size: 20px;
+  font-weight: 600;
+  color: #333;
+  margin: 0;
+}
+
+.empresas-list {
+  margin-top: 20px;
+}
+
+.empresa-item {
+  background-color: #fff;
+  border-bottom: 1px solid #e0e0e0;
+  padding: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.empresa-item:hover {
+  background-color: #f9f9f9;
+}
+
+.empresa-info h3 {
+  font-size: 15px;
+  color: #333;
+  margin-bottom: 5px;
+  font-weight: 600;
+}
+
+.empresa-info p {
+  font-size: 13px;
+  color: #666;
+}
