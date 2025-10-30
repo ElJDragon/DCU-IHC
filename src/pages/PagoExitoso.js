@@ -1,5 +1,7 @@
 import React from 'react';
 import { useNavigate, useLocation } from 'react-router-dom';
+import ColorModeToggle from '../components/ColorModeToggle';
+import AccessibleModeToggle from '../components/AccessibleModeToggle';
 import './PagoExitoso.css';
 
 function PagoExitoso() {
@@ -22,6 +24,10 @@ function PagoExitoso() {
               <span>BANCO</span><br />
               <span>PICHINCHA</span>
             </div>
+          </div>
+          <div className="header-actions">
+            <ColorModeToggle compact />
+            <AccessibleModeToggle compact />
           </div>
         </header>
 

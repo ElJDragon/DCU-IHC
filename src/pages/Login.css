@@ -2,6 +2,16 @@
   display: flex;
   height: 100vh;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  position: relative;
+}
+
+.accessibility-controls {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 1000;
+  display: flex;
+  gap: 12px;
 }
 
 .login-left {
@@ -49,13 +59,13 @@
 
 .form-group input:focus {
   outline: none;
-  border-color: #FFD100;
+  border-color: var(--color-primary);
 }
 
 .btn-ingresar {
   width: 100%;
   padding: 14px;
-  background-color: #FFD100;
+  background-color: var(--color-primary);
   border: none;
   border-radius: 4px;
   font-size: 16px;
@@ -67,7 +77,7 @@
 }
 
 .btn-ingresar:hover {
-  background-color: #E6BC00;
+  background-color: var(--color-primary-dark);
 }
 
 .login-right {
@@ -88,12 +98,12 @@
 .logo-yellow {
   width: 50px;
   height: 50px;
-  background-color: #FFD100;
+  background-color: var(--color-primary);
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 32px;
-  color: #003d6a;
+  color: var(--color-secondary);
   font-weight: bold;
 }
 
@@ -104,13 +114,13 @@
 .logo-text .banco {
   font-size: 22px;
   font-weight: 700;
-  color: #003d6a;
+  color: var(--color-secondary);
 }
 
 .logo-text .pichincha {
   font-size: 22px;
   font-weight: 700;
-  color: #003d6a;
+  color: var(--color-secondary);
 }
 
 .verificacion-info h2 {

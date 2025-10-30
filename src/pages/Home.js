@@ -1,5 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
+import ColorModeToggle from '../components/ColorModeToggle';
+import AccessibleModeToggle from '../components/AccessibleModeToggle';
 import './Home.css';
 
 function Home() {
@@ -21,7 +23,11 @@ function Home() {
               <span>PICHINCHA</span>
             </div>
           </div>
-          <button className="help-btn">? Ayuda</button>
+          <div className="header-actions">
+            <ColorModeToggle compact />
+            <AccessibleModeToggle compact />
+            <button className="help-btn">? Ayuda</button>
+          </div>
         </header>
 
         <div className="qr-section">

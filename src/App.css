@@ -4,6 +4,30 @@
   box-sizing: border-box;
 }
 
+:root {
+  /* Colores normales */
+  --color-primary: #FFD100;
+  --color-primary-dark: #E6BC00;
+  --color-secondary: #003d6a;
+  --color-secondary-light: #0066cc;
+  --color-success: #4caf50;
+  --color-info-bg: #e3f2fd;
+  --color-info-border: #90caf9;
+  --color-info-text: #1976d2;
+}
+
+/* Modo Daltónico - Tritanopía (amarillo-azul) */
+[data-color-mode="daltonic"] {
+  --color-primary: #FF6B9D;
+  --color-primary-dark: #E55A8A;
+  --color-secondary: #2D5F5D;
+  --color-secondary-light: #4A8886;
+  --color-success: #7CB342;
+  --color-info-bg: #FCE4EC;
+  --color-info-border: #F48FB1;
+  --color-info-text: #C2185B;
+}
+
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -101,5 +125,236 @@ body {
 
 .mobile-frame::-webkit-scrollbar-thumb:hover {
   background: #555;
+}
+
+/* ===== MODO ACCESIBLE - Para adultos mayores ===== */
+[data-accessible-mode="true"] {
+  /* Aumentar tamaño de fuente base */
+  font-size: 18px;
+}
+
+[data-accessible-mode="true"] body {
+  line-height: 1.8;
+}
+
+[data-accessible-mode="true"] .page-title,
+[data-accessible-mode="true"] h1 {
+  font-size: 32px !important;
+  font-weight: 700;
+}
+
+[data-accessible-mode="true"] h2 {
+  font-size: 26px !important;
+  font-weight: 700;
+}
+
+[data-accessible-mode="true"] h3 {
+  font-size: 22px !important;
+  font-weight: 700;
+}
+
+[data-accessible-mode="true"] p,
+[data-accessible-mode="true"] span,
+[data-accessible-mode="true"] label,
+[data-accessible-mode="true"] input,
+[data-accessible-mode="true"] button {
+  font-size: 18px !important;
+  line-height: 1.6;
+}
+
+[data-accessible-mode="true"] .search-box input {
+  font-size: 18px !important;
+  padding: 16px 20px !important;
+}
+
+[data-accessible-mode="true"] input,
+[data-accessible-mode="true"] button {
+  padding: 16px 24px !important;
+  min-height: 56px;
+}
+
+/* Botones más grandes */
+[data-accessible-mode="true"] .btn-ingresar,
+[data-accessible-mode="true"] .btn-continuar,
+[data-accessible-mode="true"] .btn-realizar-pago,
+[data-accessible-mode="true"] .btn-otro-pago,
+[data-accessible-mode="true"] .btn-inicio {
+  padding: 20px 24px !important;
+  font-size: 20px !important;
+  font-weight: 700;
+  min-height: 64px;
+}
+
+/* Cards y elementos interactivos más grandes */
+[data-accessible-mode="true"] .action-card,
+[data-accessible-mode="true"] .categoria-card {
+  padding: 30px 20px !important;
+  min-height: 140px;
+}
+
+[data-accessible-mode="true"] .action-icon-large,
+[data-accessible-mode="true"] .categoria-icon {
+  font-size: 52px !important;
+  margin-bottom: 12px;
+}
+
+[data-accessible-mode="true"] .action-card span,
+[data-accessible-mode="true"] .categoria-card p {
+  font-size: 18px !important;
+  font-weight: 600;
+}
+
+/* Grid de 1 columna para elementos grandes */
+[data-accessible-mode="true"] .actions-grid,
+[data-accessible-mode="true"] .categorias-grid {
+  grid-template-columns: 1fr !important;
+  gap: 20px !important;
+}
+
+/* Producto/cuenta cards más visibles */
+[data-accessible-mode="true"] .product-card,
+[data-accessible-mode="true"] .favorito-card {
+  padding: 30px !important;
+  margin-bottom: 25px !important;
+}
+
+[data-accessible-mode="true"] .balance,
+[data-accessible-mode="true"] .favorito-saldo,
+[data-accessible-mode="true"] .monto {
+  font-size: 36px !important;
+  font-weight: 900;
+}
+
+[data-accessible-mode="true"] .account-number,
+[data-accessible-mode="true"] .favorito-cuenta {
+  font-size: 20px !important;
+}
+
+/* Empresas list items más grandes */
+[data-accessible-mode="true"] .empresa-item {
+  padding: 30px !important;
+  min-height: 100px;
+}
+
+[data-accessible-mode="true"] .empresa-info h3 {
+  font-size: 20px !important;
+  margin-bottom: 10px !important;
+}
+
+[data-accessible-mode="true"] .empresa-info p {
+  font-size: 18px !important;
+}
+
+/* Formularios más accesibles */
+[data-accessible-mode="true"] .form-group {
+  margin-bottom: 35px !important;
+}
+
+[data-accessible-mode="true"] .form-group label {
+  font-size: 20px !important;
+  margin-bottom: 12px !important;
+  font-weight: 700;
+}
+
+[data-accessible-mode="true"] .form-group input {
+  font-size: 20px !important;
+  padding: 20px !important;
+  border-width: 3px !important;
+}
+
+/* Info boxes más visibles */
+[data-accessible-mode="true"] .info-box {
+  padding: 20px 24px !important;
+  font-size: 18px !important;
+  margin-bottom: 30px !important;
+  border-width: 3px !important;
+}
+
+/* Detalles de transacción */
+[data-accessible-mode="true"] .detalle-item {
+  font-size: 20px !important;
+  margin-bottom: 20px !important;
+  line-height: 1.8;
+}
+
+[data-accessible-mode="true"] .success-title {
+  font-size: 32px !important;
+}
+
+[data-accessible-mode="true"] .success-card {
+  padding: 50px 35px !important;
+}
+
+/* Tabs y navegación */
+[data-accessible-mode="true"] .tab {
+  padding: 14px 24px !important;
+  font-size: 18px !important;
+}
+
+[data-accessible-mode="true"] .quick-actions-qr,
+[data-accessible-mode="true"] .header-actions {
+  gap: 15px !important;
+}
+
+/* Botones de header más visibles */
+[data-accessible-mode="true"] .help-btn,
+[data-accessible-mode="true"] .color-mode-toggle.compact,
+[data-accessible-mode="true"] .accessible-mode-toggle.compact {
+  padding: 10px 18px !important;
+  font-size: 16px !important;
+  min-height: 44px;
+}
+
+[data-accessible-mode="true"] .back-btn {
+  font-size: 32px !important;
+  padding: 8px !important;
+}
+
+/* QR y elementos visuales */
+[data-accessible-mode="true"] .qr-code {
+  padding: 40px !important;
+}
+
+[data-accessible-mode="true"] .qr-placeholder {
+  font-size: 18px !important;
+}
+
+/* Espaciado general aumentado */
+[data-accessible-mode="true"] .page-content {
+  padding: 30px !important;
+}
+
+[data-accessible-mode="true"] .section-header {
+  margin-bottom: 25px !important;
+}
+
+/* Links más visibles */
+[data-accessible-mode="true"] .ver-todo,
+[data-accessible-mode="true"] .ver-todos {
+  font-size: 18px !important;
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+/* Status bar y headers */
+[data-accessible-mode="true"] .status-bar {
+  padding: 12px 20px !important;
+  font-size: 14px !important;
+}
+
+[data-accessible-mode="true"] .header-title {
+  font-size: 24px !important;
+}
+
+/* Contraste mejorado para botones */
+[data-accessible-mode="true"] button {
+  font-weight: 700 !important;
+  letter-spacing: 0.5px;
+}
+
+/* Mobile frame ajustado */
+[data-accessible-mode="true"] .mobile-frame {
+  height: 850px;
+  overflow-y: auto;
 }
 

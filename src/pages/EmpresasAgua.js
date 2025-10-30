@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import ColorModeToggle from '../components/ColorModeToggle';
+import AccessibleModeToggle from '../components/AccessibleModeToggle';
 import './EmpresasAgua.css';
 
 function EmpresasAgua() {
@@ -23,8 +25,14 @@ function EmpresasAgua() {
         </div>
 
         <header className="page-header">
-          <button className="back-btn" onClick={() => navigate('/pago-servicios')}>←</button>
-          <h1 className="header-title">Agua</h1>
+          <div className="header-left">
+            <button className="back-btn" onClick={() => navigate('/pago-servicios')}>←</button>
+            <h1 className="header-title">Agua</h1>
+          </div>
+          <div className="header-actions">
+            <ColorModeToggle compact />
+            <AccessibleModeToggle compact />
+          </div>
         </header>
 
         <div className="page-content">

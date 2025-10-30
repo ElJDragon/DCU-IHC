@@ -1,3 +1,72 @@
+# Sistema de Pago de Servicios - Banco Pichincha
+
+Prototipo visual de un sistema de pago de servicios de agua potable para el Banco Pichincha.
+
+## ♿ Modos de Accesibilidad
+
+Este proyecto incluye **dos modos de accesibilidad** para diferentes necesidades:
+
+### 🎨 Modo Daltónico (Tritanopía)
+
+Diseñado específicamente para personas con **Tritanopía** (deficiencia en la percepción de colores amarillo-azul).
+
+**Cómo usar:**
+
+1. Busca el botón **"🎨"** (icono de paleta) en el header
+2. Haz clic para alternar entre:
+   - **Modo Normal**: Colores originales del Banco Pichincha
+   - **Modo Daltónico**: Paleta adaptada para Tritanopía
+
+### 👴 Modo Accesible (Adultos Mayores)
+
+Diseñado para **adultos mayores** con problemas de visión. Aumenta significativamente el tamaño de todos los elementos.
+
+**Cómo usar:**
+
+1. Busca el botón **"AA"** en el header
+2. Haz clic para activar/desactivar:
+   - **Modo Normal**: Tamaños estándar
+   - **Modo Accesible**: Todo más grande y visible
+
+**Mejoras en Modo Accesible:**
+- ✅ Fuentes **mucho más grandes** (18-36px)
+- ✅ Botones más grandes y fáciles de presionar (mín. 56px altura)
+- ✅ Grid de **1 columna** (un elemento por fila en lugar de 3)
+- ✅ Espaciado aumentado entre elementos
+- ✅ Contraste mejorado
+- ✅ Iconos y elementos visuales ampliados (52px)
+- ✅ Formularios con campos más grandes
+- ✅ Mayor altura de línea para mejor legibilidad
+
+### Cambios de color en Modo Daltónico:
+
+| Elemento | Color Normal | Color Daltónico |
+|----------|--------------|-----------------|
+| Color Principal (Amarillo) | #FFD100 | #FF6B9D (Rosa/Magenta) |
+| Color Secundario (Azul) | #003d6a | #2D5F5D (Verde azulado) |
+| Enlaces | #0066cc | #4A8886 |
+| Éxito | #4caf50 | #7CB342 |
+| Info (cajas) | Azul claro | Rosa claro |
+
+### Persistencia:
+
+- La preferencia se guarda en `localStorage`
+- El modo seleccionado se mantiene al recargar la página
+- Funciona en todas las páginas de la aplicación
+
+## 🚀 Páginas incluidas:
+
+1. **Login** - Banca Web
+2. **Home** - Página principal con QR y productos
+3. **Pago de Servicios** - Categorías y búsqueda
+4. **Lista de Empresas** - Empresas de agua potable
+5. **Formulario de Pago** - Ingreso de datos
+6. **Confirmación** - Resumen del pago
+7. **Verificación** - Confirmación final
+8. **Pago Exitoso** - Comprobante
+
+---
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

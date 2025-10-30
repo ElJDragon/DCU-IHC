@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import ColorModeToggle from '../components/ColorModeToggle';
+import AccessibleModeToggle from '../components/AccessibleModeToggle';
 import './PagoServicios.css';
 
 function PagoServicios() {
@@ -22,6 +24,10 @@ function PagoServicios() {
 
         <header className="page-header">
           <button className="back-btn" onClick={() => navigate('/home')}>←</button>
+          <div className="header-actions">
+            <ColorModeToggle compact />
+            <AccessibleModeToggle compact />
+          </div>
         </header>
 
         <div className="page-content">

@@ -1,5 +1,7 @@
 import React from 'react';
 import { useNavigate, useLocation } from 'react-router-dom';
+import ColorModeToggle from '../components/ColorModeToggle';
+import AccessibleModeToggle from '../components/AccessibleModeToggle';
 import './VerificacionPago.css';
 
 function VerificacionPago() {
@@ -22,8 +24,14 @@ function VerificacionPago() {
         </div>
 
         <header className="page-header">
-          <button className="back-btn" onClick={() => navigate(-1)}>←</button>
-          <h1 className="header-title">Confirmar Pago</h1>
+          <div className="header-left">
+            <button className="back-btn" onClick={() => navigate(-1)}>←</button>
+            <h1 className="header-title">Confirmar Pago</h1>
+          </div>
+          <div className="header-actions">
+            <ColorModeToggle compact />
+            <AccessibleModeToggle compact />
+          </div>
         </header>
 
         <div className="page-content">

@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import ColorModeToggle from '../components/ColorModeToggle';
+import AccessibleModeToggle from '../components/AccessibleModeToggle';
 import './Login.css';
 
 function Login() {
@@ -17,6 +19,10 @@ function Login() {
 
   return (
     <div className="login-container">
+      <div className="accessibility-controls">
+        <ColorModeToggle />
+        <AccessibleModeToggle />
+      </div>
       <div className="login-left">
         <div className="login-box">
           <h1>Bienvenido a<br />tu Banca Web</h1>

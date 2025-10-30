@@ -11,6 +11,15 @@
   padding: 15px 20px;
   border-bottom: 1px solid #e0e0e0;
   background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
 }
 
 .back-btn {
@@ -71,7 +80,7 @@
 }
 
 .ver-todos {
-  color: #0066cc;
+  color: var(--color-secondary-light);
   text-decoration: none;
   font-size: 14px;
 }
@@ -94,7 +103,7 @@
 }
 
 .categoria-card:hover {
-  border-color: #FFD100;
+  border-color: var(--color-primary);
   background-color: #fffef0;
 }
 

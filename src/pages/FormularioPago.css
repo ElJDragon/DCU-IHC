@@ -38,7 +38,7 @@
 }
 
 .form-group input:focus {
-  border-bottom-color: #FFD100;
+  border-bottom-color: var(--color-primary);
 }
 
 .form-group input::placeholder {
@@ -57,7 +57,7 @@
 .btn-continuar {
   width: 100%;
   padding: 16px;
-  background-color: #FFD100;
+  background-color: var(--color-primary);
   border: none;
   border-radius: 8px;
   font-size: 16px;
@@ -68,5 +68,5 @@
 }
 
 .btn-continuar:hover {
-  background-color: #E6BC00;
+  background-color: var(--color-primary-dark);
 }

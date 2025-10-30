@@ -1,0 +1,38 @@
+.color-mode-toggle {
+  padding: 12px 20px;
+  background-color: #fff;
+  border: 2px solid #e0e0e0;
+  border-radius: 25px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: #333;
+}
+
+.color-mode-toggle:hover {
+  background-color: #f9f9f9;
+  border-color: #ccc;
+}
+
+.color-mode-toggle:active {
+  transform: scale(0.95);
+}
+
+/* Versión compacta para móvil */
+.color-mode-toggle.compact {
+  background: none;
+  border: 1px solid var(--color-secondary);
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 16px;
+  color: var(--color-secondary);
+  min-width: auto;
+}
+
+.color-mode-toggle.compact:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
